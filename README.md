@@ -1,3 +1,26 @@
+## octomap_rviz_plugins (kinetic) - 0.1.0-0
+
+The packages in the `octomap_rviz_plugins` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release octomap_rviz_plugins --track kinetic --rosdistro kinetic` on `Thu, 07 Jul 2016 21:18:36 -0000`
+
+The `octomap_rviz_plugins` package was released.
+
+Version of package(s) in repository `octomap_rviz_plugins`:
+
+- upstream repository: https://github.com/OctoMap/octomap_rviz_plugins.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.1.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.5`
+- vcstools version: `0.1.38`
+
+
 ## octomap_rviz_plugins (hydro) - 0.0.5-3
 
 The packages in the `octomap_rviz_plugins` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --track hydro --ros-distro hydro octomap_rviz_plugins` on `Fri, 23 May 2014 09:00:42 -0000`
