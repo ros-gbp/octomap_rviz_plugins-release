@@ -1,0 +1,12 @@
+Source: ros-jade-octomap-rviz-plugins
+Section: misc
+Priority: extra
+Maintainer: Armin Hornung <armin@hornung.io>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-catkin, ros-jade-octomap, ros-jade-octomap-msgs, ros-jade-roscpp, ros-jade-rviz
+Homepage: http://ros.org/wiki/octomap_rviz_plugins
+Standards-Version: 3.9.2
+
+Package: ros-jade-octomap-rviz-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-octomap, ros-jade-octomap-msgs, ros-jade-roscpp, ros-jade-rviz
+Description: A set of plugins for displaying occupancy information decoded from binary octomap messages.
