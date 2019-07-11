@@ -1,3 +1,16 @@
+0.2.1 (2019-07-11)
+------------------
+* Add Wolfgang Merkt to maintainers
+* `Update visualization on property changes with latched topics <https://github.com/OctoMap/octomap_rviz_plugins/issues/32>`_
+* `Update node frame from TF on every frame <https://github.com/OctoMap/octomap_rviz_plugins/issues/31>`_
+* `Fixed rendering of free-space voxels and pruning enclosed nodes <https://github.com/OctoMap/octomap_rviz_plugins/issues/30>`_
+* Contributors: Armin Hornung, Matthias Nieuwenhuisen, Vladimir Ivan, Wolfgang Merkt
+
+0.2.0 (2016-07-10)
+------------------
+* Fix: RViz uses Qt5 in kinetic
+* Contributors: Armin Hornung
+
 0.1.0 (2016-07-07)
 ------------------
 * Remove -ldefault_plugin from linker options, fixes `#19 <https://github.com/OctoMap/octomap_rviz_plugins/issues/19>`_
