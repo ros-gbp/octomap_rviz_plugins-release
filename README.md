@@ -1,3 +1,26 @@
+## octomap_rviz_plugins (melodic) - 0.2.2-1
+
+The packages in the `octomap_rviz_plugins` repository were released into the `melodic` distro by running `/usr/bin/bloom-release octomap_rviz_plugins --track melodic --rosdistro melodic` on `Tue, 16 Jul 2019 16:32:11 -0000`
+
+The `octomap_rviz_plugins` package was released.
+
+Version of package(s) in repository `octomap_rviz_plugins`:
+
+- upstream repository: https://github.com/OctoMap/octomap_rviz_plugins.git
+- release repository: https://github.com/ros-gbp/octomap_rviz_plugins-release.git
+- rosdistro version: `0.2.1-1`
+- old version: `0.2.1-1`
+- new version: `0.2.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.12`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.40`
+
+
 ## octomap_rviz_plugins (melodic) - 0.2.1-1
 
 The packages in the `octomap_rviz_plugins` repository were released into the `melodic` distro by running `/usr/bin/bloom-release octomap_rviz_plugins --track melodic --rosdistro melodic --new-track` on `Thu, 11 Jul 2019 09:29:36 -0000`
