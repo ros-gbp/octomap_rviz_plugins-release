@@ -1,0 +1,12 @@
+Source: ros-melodic-octomap-rviz-plugins
+Section: misc
+Priority: optional
+Maintainer: Armin Hornung <armin@hornung.io>
+Build-Depends: debhelper (>= 9.0.0), libqt5core5a, libqt5widgets5, qtbase5-dev, ros-melodic-catkin, ros-melodic-octomap, ros-melodic-octomap-msgs, ros-melodic-roscpp, ros-melodic-rviz
+Homepage: http://ros.org/wiki/octomap_rviz_plugins
+Standards-Version: 3.9.2
+
+Package: ros-melodic-octomap-rviz-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5core5a, libqt5widgets5, qtbase5-dev, ros-melodic-octomap, ros-melodic-octomap-msgs, ros-melodic-roscpp, ros-melodic-rviz
+Description: A set of plugins for displaying occupancy information decoded from binary octomap messages.
