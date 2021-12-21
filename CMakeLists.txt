@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(octomap_rviz_plugins)
 
 find_package(catkin REQUIRED COMPONENTS octomap_msgs
@@ -13,6 +13,8 @@ find_package(Boost REQUIRED COMPONENTS thread )
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 set(QT_LIBRARIES Qt5::Widgets)
 
+set(CMAKE_AUTOMOC ON)
+
 add_definitions(-DQT_NO_KEYWORDS)
 
 catkin_package(
@@ -21,7 +23,7 @@ catkin_package(
     CATKIN_DEPENDS octomap_msgs
                    roscpp
                    rviz
-    DEPENDS octomap
+    DEPENDS OCTOMAP
 )
                                         
 
@@ -35,20 +37,19 @@ link_directories(${catkin_LIBRARY_DIRS}
                  ${OCTOMAP_LIBRARY_DIRS}) 
 
 
-QT5_WRAP_CPP(MOC_FILES
-  include/octomap_rviz_plugins/occupancy_grid_display.h
-  include/octomap_rviz_plugins/occupancy_map_display.h
-  OPTIONS -DBOOST_TT_HAS_OPERATOR_HPP_INCLUDED -DBOOST_LEXICAL_CAST_INCLUDED 
-)
-
 set(SOURCE_FILES
   src/occupancy_grid_display.cpp
-  src/occupancy_map_display.cpp
-  ${MOC_FILES} 
+  src/occupancy_map_display.cpp 
 )
 
-add_library(${PROJECT_NAME} ${SOURCE_FILES})
+set(HEADER_FILES
+  include/octomap_rviz_plugins/occupancy_grid_display.h
+  include/octomap_rviz_plugins/occupancy_map_display.h
+)
+
+add_library(${PROJECT_NAME} MODULE ${SOURCE_FILES} ${HEADER_FILES})
 target_link_libraries(${PROJECT_NAME} ${QT_LIBRARIES} ${Boost_LIBRARIES} ${OCTOMAP_LIBRARIES} ${catkin_LIBRARIES})
+target_compile_options(${PROJECT_NAME} PUBLIC "-Wno-register") # Avoid OGRE deprecaton warnings under C++17
 
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
